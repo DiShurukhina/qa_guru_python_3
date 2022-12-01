@@ -29,6 +29,17 @@ def test_registration():
     pass
 
 
+def test_reg_positive():
+    assert 10==10
+
+
+def test_reg_negative():
+    assert "test" != "TEST"
+    assert 5 == 5
+
+
+
+
 
 
 
