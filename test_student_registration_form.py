@@ -1,6 +1,5 @@
 from selene.support.shared import browser
 from selene import be, command
-import pytest
 
 
 browser.config.hold_browser_open = True
@@ -23,13 +22,6 @@ browser.element('[id="state"]').perform(command.js.scroll_into_view)
 browser.element('[id="react-select-3-input"]').send_keys('Haryana').press_enter()
 browser.element('[id="react-select-4-input"]').send_keys('Karnal').press_enter()
 browser.element('[id="submit"]').press_enter()
-
-
-def test_registration_positive():
-    assert 'test' == 'test'
-
-def test_registration_negative():
-    pass
 
 
 
