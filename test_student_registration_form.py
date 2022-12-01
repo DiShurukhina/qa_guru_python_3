@@ -2,7 +2,7 @@ from selene.support.shared import browser
 from selene import be, command
 
 
-#browser.config.hold_browser_open = False
+browser.config.hold_browser_open = True
 browser.open('https://demoqa.com/automation-practice-form')
 browser.element('[id="firstName"]').should(be.blank).type('Dinara')
 browser.element('[id="lastName"]').should(be.blank).type('Shurukhina')
