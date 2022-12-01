@@ -25,7 +25,10 @@ browser.element('[id="react-select-4-input"]').send_keys('Karnal').press_enter()
 browser.element('[id="submit"]').press_enter()
 
 
-def test_registration():
+def test_registration_positive():
+    assert 'test' == 'test'
+
+def test_registration_negative():
     pass
 
 
