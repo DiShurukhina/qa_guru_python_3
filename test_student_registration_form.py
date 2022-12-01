@@ -1,5 +1,6 @@
 from selene.support.shared import browser
 from selene import be, command
+import pytest
 
 
 #browser.config.hold_browser_open = False
@@ -24,6 +25,8 @@ browser.element('[id="react-select-4-input"]').send_keys('Karnal').press_enter()
 browser.element('[id="submit"]').press_enter()
 
 
+def test_registration():
+    pass
 
 
 
